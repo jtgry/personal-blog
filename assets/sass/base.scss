@@ -1,0 +1,119 @@
+body{
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  font-size: $base-font-size;
+  letter-spacing: -.03em;
+  color: $color-black;
+  line-height: $base-line-height;
+  background: $color-white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: “liga” on;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  -ms-font-feature-settings: normal;
+}
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: $header-font-family;
+  line-height: 1.2;
+  margin-bottom: $spacing-unit / 2;
+  font-weight: 400;
+}
+h1{
+  font-size: 2rem;
+}
+h2{
+  font-size: 1.8rem;
+}
+h3{
+  font-size: 1.6rem;
+}
+h4{
+  font-size: 1.4rem;
+}
+h5{
+  font-size: 1.2rem;
+}
+h6{
+  font-size: 1rem;
+}
+p,li,ol{
+  font-size: 1.2rem;
+}
+a{
+  color: $color-black;
+}
+ul,ol{
+  margin-left: 1.2rem;
+  @media(min-width: $laptop){
+    margin-left: 0;
+  }
+}
+hr {
+  border: 0;
+  height: 1px;
+  background: $color-grey-light;
+  margin-bottom: $spacing-unit 0;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: $spacing-unit;
+  tr{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    border-bottom: 1px solid $color-grey-light;
+    th{
+      text-align: left;
+      display: flex;
+      flex-flow: row nowrap;
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: $spacing-unit / 3;
+    }
+    td{
+      display: flex;
+      flex-flow: row nowrap;
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: $spacing-unit / 3;
+      font-size: .9rem;
+      font-weight: 500;
+      word-break: break-word;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+img{
+  max-width: 100%;
+  width: 100%;
+}
+
+article{
+  margin: $spacing-unit * 2 0;
+}
+main{
+  width: 100%;
+}

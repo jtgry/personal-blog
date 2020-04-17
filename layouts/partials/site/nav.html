@@ -1,0 +1,12 @@
+<a class="skip-to-content" href="{{ .Permalink }}/#content">Skip navigation</a>
+{{ $currentPage := . }}
+<nav>
+  <a class="nav-title" href="/">{{ .Site.Title }}</a>
+  <ul>
+  {{ range .Site.Menus.main.ByWeight }}
+    <li>
+      <a href="{{ .URL }}" class="nav-item {{ if eq $currentPage.URL .URL }}active{{ end }}">{{ .Name }}</a>
+    </li>
+  {{ end }}
+  </ul>
+</nav>

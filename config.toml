@@ -1,0 +1,67 @@
+baseURL = "/"
+disableAliases = true
+enableRobotsTXT = false
+languageCode = "en-us"
+metaDataFormat = "yaml"
+title = "JTG"
+
+[imaging]
+anchor = "smart"
+quality = 90
+
+[mediaTypes."text/netlify"]
+delimiter = ""
+suffixes = [""]
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about"
+weight = 1
+[[menu.main]]
+identifier = "notes"
+name = "Notes"
+url = "/notes"
+weight = 3
+[[menu.main]]
+identifier = "projects"
+name = "Projects"
+url = "/projects"
+weight = 4
+[[menu.main]]
+identifier = "journal"
+name = "Journal"
+url = "/journal"
+weight = 5
+
+[outputFormats.HEADERS]
+baseName = "_headers"
+isPlainText = true
+mediatype = "text/netlify"
+notAlternative = true
+[outputFormats.REDIRECTS]
+baseName = "_redirects"
+isPlainText = true
+mediatype = "text/netlify"
+notAlternative = true
+[outputs]
+home = ["HTML", "RSS", "REDIRECTS", "HEADERS"]
+
+[params]
+disallow_search_engines = false
+image = ""
+search = false
+
+[related]
+includeNewer = true
+threshold = 80.0
+toLower = true
+[[related.indices]]
+name = "description"
+weight = 1
+[[related.indices]]
+name = "title"
+weight = 2
+[[related.indices]]
+name = "tags"
+weight = 3

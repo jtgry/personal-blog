@@ -1,0 +1,24 @@
+.skip-to-content{
+  display: none;
+}
+
+.container{
+  max-width: $content-width;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+.container-wide{
+  max-width: $content-wide;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+
+.lazyload{
+  opacity: 1;
+  transition: opacity 1s ease-out;
+
+}
+.lazyload:not(.loaded) {
+  opacity: .7;
+
+}

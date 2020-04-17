@@ -1,0 +1,8 @@
+{{ $lazyload := resources.Get "js/vendor/lazyload.js" }}
+{{ $imagesloaded := resources.Get "js/vendor/imagesloaded.js" }}
+
+{{ $main := resources.Get "js/app.js" }}
+
+{{ $scripts := slice $lazyload $imagesloaded $main | resources.Concat "app.js" | minify | fingerprint }}
+
+<script src="{{ $scripts.Permalink }}"></script>

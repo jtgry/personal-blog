@@ -1,0 +1,14 @@
+
+{{ define "main" }}
+  <article>
+    <section>
+      {{ with .Data.Pages }}
+      <ul>
+      {{ range where . "Params.hidden" "!=" "true"}}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+      </ul>
+      {{ end }}
+    </section>
+  </article>
+{{ end }}

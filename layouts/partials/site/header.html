@@ -1,0 +1,7 @@
+<header>
+  {{ with .Params.heading }}
+  <div class="container-wide">
+    {{ markdownify . }}
+  </div>
+  {{ end }}
+</header>

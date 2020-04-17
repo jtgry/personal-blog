@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <section>
+    <header>
+      <div class="container">
+        <h1>{{ .Title }}</h1>
+      </div>
+    </header>
+    <article id="content">
+      <div class="container">
+      {{ range .Paginator.Pages }}
+      <div class="post">
+        <h2>{{ .Title }}</h2>
+        <p class="meta">{{ with .Date }}{{ .Format "Monday, January 2, 2006" }}{{ end }} {{ .ReadingTime }} Minutes</p>
+        <p>{{ .Summary }}</p>
+        <a href="{{ .Permalink }}">Read More...</a>
+        <hr />
+      </div>
+      {{ end }}
+      </div>
+    </article>
+  </section>
+{{ end }}

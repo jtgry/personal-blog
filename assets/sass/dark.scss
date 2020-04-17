@@ -1,0 +1,24 @@
+@media (prefers-color-scheme: dark) {
+  body{
+    background: $color-black!important;
+  }
+  header{
+    background: $color-grey-dark!important;
+  }
+  p,ol,li,a,h1,h2,h3,h4,h5,h6,td,th{
+    color: $color-white!important;
+  }
+  tr{
+    border-color: $color-grey-light!important;
+  }
+  img {
+    opacity: .75;
+    transition: opacity .5s ease-in-out;
+  }
+  img:hover {
+    opacity: 1;
+  }
+  .meta{
+    color: $color-grey-light!important;
+  }
+}

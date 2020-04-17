@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{ block "header" . }}{{ partial "site/header.html" . }}{{ end }}
+  <article id="content">
+    <div class="container">
+    {{ with .Site.GetPage "/journal" }}
+      {{ range first 4 .Pages}}
+      <div class="post">
+        {{ with .Params.tags }}<a class="meta" href="{{ $.Site.BaseURL }}tags/{{ delimit . ", " | urlize | lower  }}">{{ delimit . ", " }}</a>{{ end }}
+        <h2>{{ .Title }}</h2>
+        <p class="meta">{{ with .Date }}{{ .Format "Monday, January 2, 2006" }}{{ end }} {{ .ReadingTime }} Minutes</p>
+        <p>{{ .Summary }}</p>
+        <a href="{{ .Permalink }}">Read More...</a>
+      </div>
+      {{ end }}
+    {{ end }}
+    
+      {{ .Content }}
+    </div>
+  </article>
+{{ end }}
