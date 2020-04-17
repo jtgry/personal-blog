@@ -1,8 +1,7 @@
 <!doctype html>
-<html lang="{{ .Site.LanguageCode | default "en" }}">
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
   <head>
     {{ block "site/meta" . }}{{ partial "site/meta.html" . }}{{ end }}
-
     <title>
       {{- block "title" . -}}
         {{- if .IsHome -}}
@@ -12,13 +11,10 @@
         {{ end }}
       {{- end -}}
     </title>
-
     {{ range .AlternativeOutputFormats }}
         <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
     {{ end }}
-
     {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
-
   </head>
     {{ if .Site.GoogleAnalytics }}{{ template "_internal/google_analytics.html" . }}{{ end }}
   <body id="root">
