@@ -20,7 +20,7 @@
     {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
 
   </head>
-    {{ block "site/google" . }}{{ partial "site/google.html" . }}{{ end }}
+    {{ if .Site.GoogleAnalytics }}{{ template "_internal/google_analytics.html" . }}{{ end }}
   <body id="root">
     {{ block "site/nav" . }}{{ partial "site/nav.html" . }}{{ end }}
     <main id="page" class="site-main" role="main">

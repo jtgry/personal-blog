@@ -1,23 +1,22 @@
+article{
+  img{
+    min-width: 140%;
+    margin-left: -20%;
+  }
+}
 .post{
   margin-bottom: $spacing-unit;
   h2{
     font-size: 3rem;
   }
   .meta{
-    font-size: .9rem;
-    font-weight: 600;
+    font-size: .8rem;
+    font-weight: 700;
     font-family: $alt-font-family;
     color: $color-grey;
   }
   a{
     margin-bottom: $spacing-unit;
     display: block;
-  }
-}
-
-article{
-  img{
-    min-width: 140%;
-    margin-left: -20%;
   }
 }

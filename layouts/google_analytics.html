@@ -5,6 +5,6 @@
 ;c.parentNode.insertBefore(a,c)
 })(window,document,"galite","script","{{ $google.Permalink }}");
 
-galite('create', '#########', 'auto');
+galite('create', '{{.Site.GoogleAnalytics}}', 'auto');
 galite('send', 'pageview');
 </script>
