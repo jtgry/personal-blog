@@ -35,7 +35,7 @@ h1,h2,h3,h4,h5,h6{
   font-family: $header-font-family;
   line-height: 1.2;
   margin-bottom: $spacing-unit / 2;
-  font-weight: 400;
+  font-weight: 700;
 }
 h1{
   font-size: 2rem;
@@ -62,9 +62,9 @@ a{
   color: $color-black;
 }
 ul,ol{
-  margin-left: 1.2rem;
+  margin-left: $spacing-unit / 2;
   @media(min-width: $laptop){
-    margin-left: 0;
+    margin-left: $spacing-unit;
   }
 }
 hr {
@@ -109,6 +109,40 @@ table{
 img{
   max-width: 100%;
   width: 100%;
+  margin-bottom: $spacing-unit / 2;
+}
+blockquote{
+  font-size: 1.8em;
+  width:100%;
+  margin-top: $spacing-unit;
+  font-family: $header-font-family;
+  font-style:italic;
+  color: $color-grey;
+  padding: $spacing-unit * 3 $spacing-unit * 2;
+  border-left: .2em solid $color-grey;
+  position: relative;
+  background:$color-grey-light;
+  p{
+    font-size: 2rem;
+  }
+  @media(min-width: $laptop) {
+    width:120%;
+    margin-left: -10%;
+  }
+}
+
+blockquote::before{
+  font-family: $header-font-family;
+  content: "\201C";
+  color: $color-grey-dark;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
 }
 
 article{

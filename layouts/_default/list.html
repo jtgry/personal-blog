@@ -10,7 +10,7 @@
       {{ range .Paginator.Pages }}
       <div class="post">
         <h2>{{ .Title }}</h2>
-        <p class="meta">{{ with .Date }}{{ .Format "Monday, January 2, 2006" }}{{ end }} {{ .ReadingTime }} Minutes</p>
+        {{ if gt .Date "" }}<p class="meta">{{ with .Date }}{{ .Format "Monday, January 2, 2006" }}{{ end }} · {{ .ReadingTime }} Min Read</p>{{ end }}
         <p>{{ .Summary }}</p>
         <a href="{{ .Permalink }}">Read More...</a>
         <hr />

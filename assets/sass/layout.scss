@@ -1,7 +1,20 @@
 article{
   img{
-    min-width: 140%;
-    margin-left: -20%;
+    @media(min-width: $laptop) {
+      min-width: 140%;
+      margin-left: -20%;
+    }
+  }
+}
+.content{
+  p:first-of-type::first-letter {
+    float: left;
+    font-family: $header-font-family;
+    font-size: 400%;
+    font-weight: 700;
+    line-height: 0.65;
+    margin: 0;
+    padding: 0.05em 0.1em 0 0;
   }
 }
 .post{
@@ -19,4 +32,6 @@ article{
     margin-bottom: $spacing-unit;
     display: block;
   }
+
+
 }
