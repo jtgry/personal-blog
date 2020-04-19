@@ -1,0 +1,24 @@
+{{ define "main" }}
+<header>
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ if gt .Date "" }}<p class="meta">{{ with .Date }}{{ .Format "Monday, January 2, 2006" }}{{ end }} · {{ .ReadingTime }} Min Read</p>{{ end }}
+  </div>
+</header>
+<article class="content" id="content">
+  <div class="container">
+    <form name="Contact Form" method="POST" data-netlify="true" action="/thankyou">
+      <label class="form-label" for="name">Name</label>
+      <input class="form-control" type="text" id="name" name="name" required>
+      <label class="form-label" for="email">Email Address</label>
+      <input class="form-control" type="email" id="email" name="email" required>
+      <label class="form-label" for="message">Message</label>
+      <textarea class="form-control" id="message" name="message"></textarea>
+      <div class="hidden">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+      </div>
+        <button class="button" type="submit">Submit</button>
+    </form>
+  </div>
+</article>
+{{ end }}

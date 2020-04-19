@@ -1,6 +1,6 @@
 ---
 title: Fezes are cool Part 2
-date: 2017-03-03T14:15:59-06:00
+date: 2020-03-24T01:15:59-06:00
 ---
 You know when grown-ups tell you 'everything's going to be fine' and you think they're probably lying to make you feel better? You've swallowed a planet! The way I see it, every life is a pile of good things and bad things.…hey.…the good things don't always soften the bad things; but vice-versa the bad things don't necessarily spoil the good things and make them unimportant.
 

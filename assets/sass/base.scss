@@ -5,7 +5,7 @@ body{
   font-family: $base-font-family;
   font-weight: $base-font-weight;
   font-size: $base-font-size;
-  letter-spacing: -.03em;
+  letter-spacing: -.01em;
   color: $color-black;
   line-height: $base-line-height;
   background: $color-white;
@@ -33,9 +33,9 @@ ul, ol, dl, figure,
 }
 h1,h2,h3,h4,h5,h6{
   font-family: $header-font-family;
-  line-height: 1.2;
+  line-height: 1.4;
   margin-bottom: $spacing-unit / 2;
-  font-weight: 700;
+  font-weight: 400;
 }
 h1{
   font-size: 2rem;
@@ -62,9 +62,9 @@ a{
   color: $color-black;
 }
 ul,ol{
-  margin-left: $spacing-unit / 2;
+  margin-left: $spacing-unit / 1.2;
   @media(min-width: $laptop){
-    margin-left: $spacing-unit;
+    margin-left: $spacing-unit / 1.4;
   }
 }
 hr {
@@ -98,7 +98,7 @@ table{
       flex-grow: 1;
       flex-basis: 0;
       padding: $spacing-unit / 3;
-      font-size: .9rem;
+      font-size: 1rem;
       font-weight: 500;
       word-break: break-word;
       overflow: hidden;
@@ -112,39 +112,47 @@ img{
   margin-bottom: $spacing-unit / 2;
 }
 blockquote{
-  font-size: 1.8em;
-  width:100%;
-  margin-top: $spacing-unit;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+  margin-top: $spacing-unit * 2;
   font-family: $header-font-family;
-  font-style:italic;
-  color: $color-grey;
-  padding: $spacing-unit * 3 $spacing-unit * 2;
-  border-left: .2em solid $color-grey;
+  font-style: italic;
+  color: $color-black;
+  padding: $spacing-unit * 2 $spacing-unit;
+  border-left: .1em solid $color-grey-light;
   position: relative;
-  background:$color-grey-light;
   p{
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
   @media(min-width: $laptop) {
-    width:120%;
-    margin-left: -10%;
+    width:140%;
+    margin-left: -20%;
+    font-size: 2rem;
+    p{
+      font-size: 2rem;
+    }
   }
 }
 
 blockquote::before{
   font-family: $header-font-family;
   content: "\201C";
-  color: $color-grey-dark;
+  color: $color-grey;
   font-size: 4em;
   position: absolute;
-  left: 10px;
-  top:-10px;
+  margin: 0 auto;
+  top: -80px;
 }
 
 blockquote::after{
   content: '';
 }
-
+blockquote{
+ p::first-letter {
+  all: unset!important;
+ }
+}
 article{
   margin: $spacing-unit * 2 0;
 }

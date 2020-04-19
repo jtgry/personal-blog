@@ -19,8 +19,12 @@ article{
 }
 .post{
   margin-bottom: $spacing-unit;
-  h2{
-    font-size: 3rem;
+  h3{
+    font-size: 2rem;
+    a{
+      margin-bottom: 0;
+      text-decoration: none;
+    }
   }
   .meta{
     font-size: .8rem;
@@ -33,5 +37,7 @@ article{
     display: block;
   }
 
-
+}
+.page-title{
+  font-size: 4rem;
 }
