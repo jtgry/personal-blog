@@ -40,21 +40,30 @@ article{
     }
   }
   a{
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit / 2;
     display: inline-block;
   }
-  
-
+  .button{
+    margin-top: 0;
+    margin-bottom: $spacing-unit;
+  }
 }
 .page-title{
-  font-size: 4rem;
+  font-size: 3rem;
+  @media(min-width: $laptop) {
+    font-size: 4rem;
+  }
 }
 .meta{
-  font-size: .8rem;
+  font-size: .7rem;
   font-weight: 700;
   font-family: $alt-font-family;
   color: $color-grey;
   margin-bottom: .5em;
+  @media(min-width: $laptop) {
+    font-size: .8rem;
+  }
+  
 }
 
 .tag{

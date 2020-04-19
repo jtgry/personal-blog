@@ -1,15 +1,11 @@
 {{ define "main" }}
   <section>
-    <header>
-      <div class="container">
-        <h1>{{ .Title }}</h1>
-      </div>
-    </header>
+    {{ block "site/page-header" . }}{{ partial "site/page-header.html" . }}{{ end }}
     <article id="content">
       <div class="container">
       {{ range .Paginator.Pages }}
       <div class="post">
-        <h3>{{ .Title }}</h3>
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         {{ if gt .Date "" }}<p class="meta">{{ with .Date }}{{ .Format "Monday, January 2, 2006" }}{{ end }} · {{ .ReadingTime }} Min Read</p>{{ end }}
         {{ with .Params.tags }}{{ range . }}<a class="tag" href="{{ $.Site.BaseURL }}tags/{{ . | urlize | lower }}">{{ . }}</a>{{ end }}{{ end }}
         <p>{{ .Summary }}</p>

@@ -1,10 +1,5 @@
 {{ define "main" }}
-<header>
-  <div class="container">
-    <h1>{{ .Title }}</h1>
-    {{ if gt .Date "" }}<p class="meta">{{ with .Date }}{{ .Format "Monday, January 2, 2006" }}{{ end }} · {{ .ReadingTime }} Min Read</p>{{ end }}
-  </div>
-</header>
+{{ block "site/page-header" . }}{{ partial "site/page-header.html" . }}{{ end }}
 <article class="content" id="content">
   <div class="container">
     <form name="Contact Form" method="POST" data-netlify="true" action="/thankyou">

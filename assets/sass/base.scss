@@ -56,7 +56,10 @@ h6{
   font-size: 1rem;
 }
 p,li,ol{
-  font-size: 1.2rem;
+  font-size: 1rem;
+  @media(min-width: $laptop) {
+    font-size: 1.2rem;
+  }
 }
 a{
   color: $color-black;
@@ -117,27 +120,26 @@ blockquote{
   font-size: 1.2rem;
   width: 100%;
   text-align: center;
-  margin: $spacing-unit * 2 0;
+  margin: $spacing-unit 0;
   font-family: $header-font-family;
   color: $color-black;
-  padding: $spacing-unit $spacing-unit;
+  padding: $spacing-unit / 2;
   border-left: .1em solid $color-grey-light;
   position: relative;
   p{
     font-size: 1.2rem;
+    margin-bottom: 0;
   }
   @media(min-width: $laptop) {
     width: 140%;
+    margin: $spacing-unit * 2 0;
     margin-left: -20%;
     font-size: 2rem;
+    padding: $spacing-unit;
     p{
       font-size: 2rem;
-      margin-bottom: 0;
     }
   }
-}
-blockquote::after{
-  content: '';
 }
 blockquote{
  p::first-letter {
@@ -145,7 +147,10 @@ blockquote{
  }
 }
 article{
-  margin: $spacing-unit * 2 0;
+  margin: $spacing-unit 0;
+  @media(min-width: $laptop) {
+    margin: $spacing-unit * 2 0;
+  }
 }
 main{
   width: 100%;
@@ -154,9 +159,10 @@ footer{
   width: 100%;
   padding: $spacing-unit 0;
   text-align: center;
-  background: $color-grey-light;
   p{
-    font-size: 1rem;
+    font-size: .8rem;
+    font-weight: 500;
+    color: $color-grey;
     font-family: $alt-font-family;
     margin: 0;
   }

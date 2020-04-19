@@ -1,0 +1,11 @@
+<header>
+  <div class="container">
+    {{ if eq .Parent.Permalink .Site.BaseURL }}
+    <h1 class="large-title">{{ .Title }}</h1>
+    {{ else }}
+    <h1>{{ .Title }}</h1>
+    {{ end }}
+    {{ if gt .Date "" }}<p class="meta">{{ with .Date }}{{ .Format "Monday, January 2, 2006" }}{{ end }} · {{ .ReadingTime }} Min Read</p>{{ end }}
+    {{ with .Params.tags }}{{ range . }}<a class="tag" href="{{ $.Site.BaseURL }}tags/{{ . | urlize | lower }}">{{ . }}</a>{{ end }}{{ end }}
+  </div>
+</header>

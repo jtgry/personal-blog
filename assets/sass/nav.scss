@@ -15,7 +15,11 @@ nav{
     color: $color-black;
     font-family: $header-font-family;
     font-size: 2rem;
+    margin: .2em 0;
     text-decoration: none;
+    @media(min-width: $laptop) {
+      margin: 0;
+    }
   }
   ul{
     display: flex;
@@ -30,10 +34,11 @@ nav{
       font-weight: 600;
       @media(min-width: $laptop) {
         margin: 0;
-        margin-right: $spacing-unit;
+        margin-right: $spacing-unit / 2;
       }
       a{
         color: $color-grey;
+        padding: .2em .1em;
         border-bottom: 2px solid transparent;
         transition: all 0.3s ease-out;
         transition-property: color, border-color;
