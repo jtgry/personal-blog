@@ -16,7 +16,6 @@ nav{
     font-family: $header-font-family;
     font-size: 2rem;
     text-decoration: none;
-    font-weight: 700;
   }
   ul{
     display: flex;
@@ -25,13 +24,27 @@ nav{
     margin: 0;
     li{
       display: inline-flex;
-      margin: 0 $spacing-unit / 2;
+      margin: 0 $spacing-unit / 3;
+      font-family: $alt-font-family;
+      font-size: .9rem;
+      font-weight: 600;
       @media(min-width: $laptop) {
         margin: 0;
         margin-right: $spacing-unit;
       }
       a{
-        color: $color-brand;
+        color: $color-grey;
+        border-bottom: 2px solid transparent;
+        transition: all 0.3s ease-out;
+        transition-property: color, border-color;
+        &:hover{
+          color: $color-grey-dark;
+          border-bottom: 2px solid $color-grey;
+        }
+        &.active{
+          color: $color-black;
+          border-bottom: 2px solid $color-grey-dark;
+        }
       }
     }
   }

@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = ""
 disableAliases = true
 enableRobotsTXT = false
 languageCode = "en-us"
@@ -17,27 +17,27 @@ suffixes = [""]
 [[menu.main]]
 identifier = "about"
 name = "About"
-url = "/about"
+url = "/about/"
 weight = 1
 [[menu.main]]
 identifier = "notes"
 name = "Notes"
-url = "/notes"
+url = "/notes/"
 weight = 2
 [[menu.main]]
 identifier = "projects"
 name = "Projects"
-url = "/projects"
+url = "/projects/"
 weight = 3
 [[menu.main]]
 identifier = "journal"
 name = "Journal"
-url = "/journal"
+url = "/journal/"
 weight = 4
 [[menu.main]]
 identifier = "contact"
 name = "Contact"
-url = "/contact"
+url = "/contact/"
 weight = 5
 
 [outputFormats.HEADERS]

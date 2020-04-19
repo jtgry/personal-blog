@@ -6,11 +6,11 @@
     {{ with .Site.GetPage "/journal" }}
       {{ range first 4 .Pages}}
       <div class="post">
-        {{ with .Params.tags }}<a class="meta" href="{{ $.Site.BaseURL }}tags/{{ delimit . ", " | urlize | lower  }}">{{ delimit . ", " }}</a>{{ end }}
         <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         {{ if gt .Date "" }}<p class="meta">{{ with .Date }}{{ .Format "Monday, January 2, 2006" }}{{ end }} · {{ .ReadingTime }} Min Read</p>{{ end }}
+        {{ with .Params.tags }}{{ range . }}<a class="tag" href="{{ $.Site.BaseURL }}tags/{{ . | urlize | lower }}">{{ . }}</a>{{ end }}{{ end }}
         <p>{{ .Summary }}</p>
-        <a href="{{ .Permalink }}">Read More...</a>
+        <a href="{{ .Permalink }}" class="button border">Read More...</a>
         <hr />
       </div>
       {{ end }}

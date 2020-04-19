@@ -1,8 +1,19 @@
 article{
-  img{
+  figure{
     @media(min-width: $laptop) {
+      margin: $spacing-unit * 2 0;
       min-width: 140%;
       margin-left: -20%;
+    }
+    img{
+      margin-bottom: 0;
+      border-radius: 2px;
+    }
+    figcaption{
+      color: $color-grey;
+      font-family: $alt-font-family;
+      font-weight: 500;
+      font-size: .8rem;
     }
   }
 }
@@ -11,7 +22,7 @@ article{
     float: left;
     font-family: $header-font-family;
     font-size: 400%;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 0.65;
     margin: 0;
     padding: 0.05em 0.1em 0 0;
@@ -21,23 +32,40 @@ article{
   margin-bottom: $spacing-unit;
   h3{
     font-size: 2rem;
+    margin-bottom: 0;
     a{
       margin-bottom: 0;
       text-decoration: none;
+      display: block;
     }
-  }
-  .meta{
-    font-size: .8rem;
-    font-weight: 700;
-    font-family: $alt-font-family;
-    color: $color-grey;
   }
   a{
     margin-bottom: $spacing-unit;
-    display: block;
+    display: inline-block;
   }
+  
 
 }
 .page-title{
   font-size: 4rem;
+}
+.meta{
+  font-size: .8rem;
+  font-weight: 700;
+  font-family: $alt-font-family;
+  color: $color-grey;
+  margin-bottom: .5em;
+}
+
+.tag{
+  font-size: .8rem;
+  font-weight: 700;
+  font-family: $alt-font-family;
+  color: $color-grey;
+  background: $color-grey-light;
+  margin-bottom: $spacing-unit / 2;
+  margin-right: .5em;
+  padding: .2em .5em;
+  text-decoration: none;
+  border-radius: 2px;
 }

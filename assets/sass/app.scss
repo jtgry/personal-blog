@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
 $base-font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 $alt-font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-$header-font-family: 'Playfair Display', serif;
+$header-font-family: 'Lora', serif;
 
 $base-font-size:   16px;
 $base-font-weight: 400;
@@ -24,11 +24,12 @@ $color-green:      #003333;
 $color-salmon:     #CC6666;
 $color-orange:     #FF9933;
 
-$color-brand:      #1B2335;
+$color-brand:      #424242;
 $color-brand-alt:  #0000FF;
 
 $color-white:      #f3f7f7;
 $color-black:      #424242;
+$color-background: #323232;
 $color-transparent:rgba(0,0,0,0);
 $color-grey:       rgba(110,110,110,1);
 $color-grey-light: lighten($color-grey, 45%);
