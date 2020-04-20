@@ -3,7 +3,7 @@
     background: $color-background!important;
   }
   header{
-    background: $color-grey-dark!important;
+    background: $color-background!important;
   }
   p,ol,li,a,h1,h2,h3,h4,h5,h6,td,th,label{
     color: $color-white!important;
@@ -29,7 +29,7 @@
     color: $color-white!important;
   }
   footer{
-    background: $color-grey-dark!important;
+    background: $color-background!important;
   }
   input,
   textarea,
@@ -39,5 +39,12 @@
   }
   .button{
     background: $color-grey;
+    border-color: $color-grey;
+  }
+  .grid-item{
+    border: 2px solid $color-grey!important;
+    &:hover{
+      border: 2px solid $color-white!important;
+    }
   }
 }

@@ -1,0 +1,24 @@
+<section>
+  <div class="grid">
+    
+    {{ $related := .Site.RegularPages.Related . | first 2 }}
+    {{ with $related }}
+    {{ range . }}
+    <div class="grid-item">
+    <p class="meta">See Also</p>
+    <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+    <p>{{ .Summary }}</p>
+    <a href="{{ .Permalink }}" class="button border">Read More</a>
+    </div>
+    {{ end }}
+    {{ end }}
+    {{with .Next}}
+    <div class="grid-item">
+    <p class="meta">Read Next</h3>
+    <h4><a href="{{.Permalink}}">{{ .Title }}</a></h4>
+    <p>{{ .Summary }}</p>
+    <a href="{{ .Permalink }}" class="button border">Read More</a>
+    </div>
+    {{ end }}
+  </div>
+</section>

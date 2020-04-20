@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+       url('../fonts/lora-v15-latin/lora-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lora-v15-latin/lora-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 
 $base-font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 $alt-font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
@@ -29,10 +38,10 @@ $color-brand-alt:  #0000FF;
 
 $color-white:      #f3f7f7;
 $color-black:      #424242;
-$color-background: #323232;
+$color-background: #222222;
 $color-transparent:rgba(0,0,0,0);
-$color-grey:       rgba(110,110,110,1);
-$color-grey-light: lighten($color-grey, 45%);
+$color-grey:       rgba(120,120,120,1);
+$color-grey-light: lighten($color-grey, 40%);
 $color-grey-dark:  darken($color-grey, 15%);
 
 $height-mid:        1000;
@@ -47,5 +56,6 @@ $height-top:        2000;
   "header",
   "forms",
   "button",
+  "dark",
   "util"
 ;
