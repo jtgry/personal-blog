@@ -2,5 +2,6 @@
 /node_modules
 
 /functions
+/resources/_gen/assets
 
 .env
