@@ -4,7 +4,8 @@ enableRobotsTXT = false
 languageCode = "en-us"
 metaDataFormat = "yaml"
 title = "JTG"
-googleAnalytics = "Here you will find writings, resources, and notes about technology, the web, etc."
+description = "Here you will find writings, resources, and notes about technology, the web, etc."
+googleAnalytics = ""
 summaryLength = 30
 
 [imaging]
