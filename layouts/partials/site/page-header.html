@@ -1,6 +1,6 @@
 <header>
   <div class="container">
-    {{ if eq .Parent.Permalink .Site.BaseURL }}
+    {{ if .Parent.IsHome }}
     <h1 class="large-title">{{ .Title }}</h1>
     {{ else }}
     <h1>{{ .Title }}</h1>
