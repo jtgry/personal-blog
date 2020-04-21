@@ -24,12 +24,15 @@ nav{
   }
   ul{
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-around;
     margin: 0;
+    @media(min-width: $laptop) {
+      justify-content: flex-end;
+    }
     li{
       display: inline-flex;
-      margin: 0 $spacing-unit / 3;
       font-family: $alt-font-family;
       font-size: .9rem;
       font-weight: 600;

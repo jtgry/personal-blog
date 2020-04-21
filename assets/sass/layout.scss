@@ -4,6 +4,7 @@ article{
       margin: $spacing-unit * 2 0;
       min-width: 140%;
       margin-left: -20%;
+      max-width: $content-width;
     }
     img{
       margin-bottom: 0;
