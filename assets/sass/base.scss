@@ -24,6 +24,7 @@ body{
   -moz-font-feature-settings: "kern";
   -moz-font-feature-settings: "kern=1";
   -ms-font-feature-settings: normal;
+  transition: background-color .3s ease-out;
 }
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,

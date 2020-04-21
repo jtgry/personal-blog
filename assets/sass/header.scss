@@ -21,6 +21,7 @@ header{
     }
     &.large-title{
       font-size: 3rem;
+      
       @media(min-width: $laptop) {
         font-size: 6rem;
       }

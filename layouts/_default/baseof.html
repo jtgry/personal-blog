@@ -1,6 +1,6 @@
 <!doctype html>
-<html lang="{{ .Site.LanguageCode | default "en-us" }}">
-  <head>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}" id="root" class="theme-dark">
+  <head >
     {{ block "site/meta" . }}{{ partial "site/meta.html" . }}{{ end }}
     <title>
       {{- block "title" . -}}
@@ -17,7 +17,7 @@
     {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
   </head>
     {{ if .Site.GoogleAnalytics }}{{ template "_internal/google_analytics.html" . }}{{ end }}
-  <body id="root">
+  <body>
     {{ block "site/nav" . }}{{ partial "site/nav.html" . }}{{ end }}
     <main id="page" class="site-main" role="main">
       {{ block "main" . }}{{ end }}

@@ -3,11 +3,13 @@
 }
 
 .container{
+  width: 100%;
   max-width: $content-width;
   padding: 0 1em;
   margin: 0 auto;
 }
 .container-wide{
+  width: 100%;
   max-width: $content-wide;
   padding: 0 1em;
   margin: 0 auto;
