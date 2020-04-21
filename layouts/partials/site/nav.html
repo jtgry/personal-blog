@@ -3,7 +3,7 @@
 
 <nav>
   <a class="nav-title" href="/">{{ .Site.Title }}</a>
-  <ul>
+  <ul class="nav-items">
   {{ range .Site.Menus.main.ByWeight }}
     <li>
       <a href="{{ .URL }}" class="nav-item {{ if eq $currentPage.URL .URL }}active{{ end }}">{{ .Name }}</a>

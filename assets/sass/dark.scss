@@ -3,9 +3,6 @@
     body{
       background: $color-background!important;
     }
-    header{
-      background: $color-background!important;
-    }
     p,ol,li,a,h1,h2,h3,h4,h5,h6,td,th,label{
       color: $color-white!important;
     }
@@ -17,10 +14,13 @@
     }
     img {
       opacity: .75;
-      transition: opacity .5s ease-in-out;
+      transition: opacity .5s ease-out;
     }
     img:hover {
       opacity: 1;
+    }
+    .lazyload{
+      opacity: .75;
     }
     .meta{
       color: $color-grey-light!important;
@@ -34,6 +34,16 @@
     select {
       background: $color-background;
       color: $color-white;
+    }
+    .svg-icon path,
+    .svg-icon polygon,
+    .svg-icon rect {
+      fill: $color-grey-light;
+    }
+
+    .svg-icon circle {
+      stroke: $color-grey-light;
+      stroke-width: 1;
     }
     .button{
       background: $color-grey;

@@ -29,3 +29,30 @@
   visibility: hidden;
   display: none;
 }
+.icon-link{
+  border-bottom: none;
+  &:hover{
+  border-bottom: none;
+  }
+}
+
+.svg-icon {
+  width: 1.4em;
+  height: 1.4em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: $color-grey;
+  transition: fill .5s ease-out;
+}
+
+.svg-icon circle {
+  stroke: $color-grey;
+  stroke-width: 1;
+  transition: stroke .5s ease-out;
+}
+.icon-fallback-text{
+  display: none;
+}
