@@ -35,8 +35,10 @@
   bottom: 0;
   margin-right: $spacing-unit / 2;
   margin-bottom: $spacing-unit / 2;
+  padding: .5em;
+  background: $color-grey-light;
+  line-height: 0;
   border-radius: 3em;
-
   border-bottom: none;
   &:hover{
   border-bottom: none;
