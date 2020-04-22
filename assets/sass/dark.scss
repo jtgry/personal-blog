@@ -38,15 +38,8 @@
     .icon-link{
       background: $color-grey-dark;
     }
-    .svg-icon path,
-    .svg-icon polygon,
-    .svg-icon rect {
-      fill: $color-grey-light;
-    }
-
-    .svg-icon circle {
+    .feather {
       stroke: $color-grey-light;
-      stroke-width: 1;
     }
     .button{
       background: $color-grey;

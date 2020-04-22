@@ -45,22 +45,14 @@
   }
 }
 
-.svg-icon {
-  width: 1.4em;
-  height: 1.4em;
-}
-
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-  fill: $color-grey;
-  transition: fill .5s ease-out;
-}
-
-.svg-icon circle {
+.feather {
+  width: 24px;
+  height: 24px;
   stroke: $color-grey;
-  stroke-width: 1;
-  transition: stroke .5s ease-out;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
 }
 .icon-fallback-text{
   display: none;
