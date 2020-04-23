@@ -5,8 +5,19 @@
   'use strict';
   if (!('localStorage' in window)) return;
   var darkMode = localStorage.getItem('darkMode');
-  if (!darkMode) return;
-  document.documentElement.className += 'theme-dark';
+  if (darkMode == 'true'){
+  document.documentElement.className = 'theme-dark';
+  }
+  else if (darkMode == 'false'){
+    document.documentElement.className = '';
+  }
+  else{
+    if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
+    console.log('🎉 Dark mode is supported');
+    localStorage.setItem('darkMode', true);
+    document.documentElement.className = 'theme-dark';
+    }
+  }
 })(window, document);
 </script>
   <head >

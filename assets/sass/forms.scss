@@ -30,12 +30,21 @@ select {
   margin-right: $spacing-unit / 3;
   margin-bottom: $spacing-unit / 3;
   padding: .5em .5em .3em .5em;
-  border: none;
-  border: 1px solid $color-grey-light;
+  border: 2px solid $color-grey-light;
   outline: none;
 
 }
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: $color-grey;
 
+}
+input:active,
+textarea:active,
+select:active {
+  border-color: $color-grey;
+}
 input,
 select,
 button,
