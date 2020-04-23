@@ -1,4 +1,4 @@
-baseURL = "https://jtg.netlify.app/"
+baseURL = "https://jtg.netlify.app"
 disableAliases = true
 enableRobotsTXT = false
 languageCode = "en-us"
