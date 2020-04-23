@@ -5,4 +5,4 @@
 
 {{ $scripts := slice $lazyload $imagesloaded $main | resources.Concat "app.js" | minify | fingerprint }}
 
-<script src="{{ $scripts.RelPermalink }}" async></script>
+<script src="{{ $scripts.RelPermalink }}"></script>
