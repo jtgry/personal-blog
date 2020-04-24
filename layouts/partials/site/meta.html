@@ -10,7 +10,6 @@
 
 {{ template "_internal/opengraph.html" . }}
 {{ with .Params.title }}<meta property="og:title" content="{{ . }} | {{ $.Site.Title }}" />{{ end }}
-
 {{ template "_internal/twitter_cards.html" . }}
 
 {{ hugo.Generator }}
