@@ -1,6 +1,5 @@
 <section>
   <div class="grid">
-    
     {{ $related := .Site.RegularPages.Related . | first 2 }}
     {{ with $related }}
     {{ range . }}
@@ -12,7 +11,7 @@
     </div>
     {{ end }}
     {{ end }}
-    {{with .Next}}
+    {{ with .Next }}
     <div class="grid-item">
     <p class="meta">Read Next</h3>
     <h4><a href="{{.Permalink}}">{{ .Title }}</a></h4>
