@@ -3,6 +3,16 @@
     {{ block "site/page-header" . }}{{ partial "site/page-header.html" . }}{{ end }}
     <article class="content" id="content">
       <div class="container">
+        {{ with .Params.image }}
+        {{ $img := (resources.Get . ).Resize "1000x" }}
+        {{ $imgthumbnail := $img.Resize "300x q25" | images.Filter (images.GaussianBlur 3) }}
+        <figure>
+          <img class="lazyload" src="{{ $imgthumbnail.RelPermalink }}" data-src="{{ $img.RelPermalink }}" alt="{{ $.Params.altText }}" />
+          <figcaption>
+            {{ $.Params.altText }}
+          </figcaption>
+        </figure>
+        {{ end }}
         {{ .Content }}
       </div>
     </article>
