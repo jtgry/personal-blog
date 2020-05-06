@@ -1,4 +1,4 @@
-baseURL = "https://jtg.netlify.app"
+baseURL = "https://jtg.netlify.app/"
 disableAliases = true
 enableRobotsTXT = false
 languageCode = "en-us"
@@ -11,6 +11,9 @@ summaryLength = 30
 [imaging]
 anchor = "smart"
 quality = 90
+
+[minify]
+disableSVG = true
 
 [mediaTypes."text/netlify"]
 delimiter = ""
