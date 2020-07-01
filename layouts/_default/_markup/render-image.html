@@ -1,0 +1,3 @@
+{{- $image := (resources.Get .Destination).Resize "1200x" -}}
+{{- $imageThumbnail := $image.Resize "100x q25" | images.Filter (images.GaussianBlur 3) -}}
+<img class="lazyload" data-object-fit="cover" src="{{ $imageThumbnail.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
