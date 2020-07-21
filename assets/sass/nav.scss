@@ -30,6 +30,7 @@ nav{
     margin: 0;
     @media(min-width: $laptop) {
       justify-content: flex-end;
+      width: 80%;
     }
     li{
       display: inline-flex;

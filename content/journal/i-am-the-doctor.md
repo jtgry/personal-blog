@@ -1,5 +1,5 @@
 ---
-title: I am the Doctor
+title: 
 date: 2020-03-03T14:15:59-06:00
 draft: true
 tags:
@@ -15,6 +15,8 @@ I am the Doctor, and you are the Daleks! Aw, you're all **Mr. Grumpy Face** toda
 > I wear a fez now. **Fezes are cool.**
 
 {{< img "/images/placeholder.jpg" "A picture of a woman sitting at a table." "Photo by Brooke Cagle on Unsplash.">}}
+
+![A picture of a woman sitting at a table." "Photo by Brooke Cagle on Unsplash."](/images/placeholder.jpg)
 
 I am the **Doctor**, and you are the **Daleks!** You hit me with a cricket bat. Stop talking, brain thinking. Hush. I am the Doctor, and you are the Daleks!
 

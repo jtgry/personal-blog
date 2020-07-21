@@ -3,9 +3,8 @@ disableAliases = true
 enableRobotsTXT = false
 languageCode = "en-us"
 metaDataFormat = "yaml"
-title = "JTG"
+title = "Tyler Gray"
 description = "Here you will find writings, resources, and notes about technology, the web, etc."
-googleAnalytics = ""
 summaryLength = 30
 
 [imaging]
@@ -35,9 +34,14 @@ name = "Projects"
 url = "/projects/"
 weight = 3
 [[menu.main]]
-identifier = "journal"
-name = "Journal"
-url = "/journal/"
+identifier = "resume"
+name = "Résumé"
+url = "/resume/"
+weight = 3
+[[menu.main]]
+identifier = "github"
+name = "Github"
+url = "https://github.com/jtgry"
 weight = 4
 [[menu.main]]
 identifier = "contact"

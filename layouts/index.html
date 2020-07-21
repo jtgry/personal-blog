@@ -2,10 +2,12 @@
 {{ block "header" . }}{{ partial "site/header.html" . }}{{ end }}
   <article id="content">
     <div class="container">
+    
+    {{ with .Site.GetPage "/journal" }}
+    {{ with .Pages }}
     <hr class="page-hr"/>
     <h2 class="page-title">Latest Posts</h2>
-    {{ with .Site.GetPage "/journal" }}
-      {{ range first 4 .Pages}}
+      {{ range first 4 . }}
       <div class="post">
         <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         {{ if gt .Date "" }}<p class="meta">{{ with .Date }}{{ .Format "Monday, January 2, 2006" }}{{ end }} · {{ .ReadingTime }} Min Read</p>{{ end }}
@@ -15,6 +17,7 @@
         <hr />
       </div>
       {{ end }}
+    {{ end }}
     {{ end }}
     {{ .Content }}
     </div>

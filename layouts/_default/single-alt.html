@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <section>
+    <article class="about" id="content">
+      {{ with .Params.image }}
+        {{ $img := (resources.Get . ).Resize "1000x" }}
+        {{ $imgthumbnail := $img.Resize "300x q25" | images.Filter (images.GaussianBlur 3) }}
+          <img class="lazyload" src="{{ $imgthumbnail.RelPermalink }}" data-src="{{ $img.RelPermalink }}" alt="{{ $.Params.altText }}" />
+        {{ end }}
+      <div class="container">
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+      </div>
+    </article>
+    {{ block "site/related" . }}{{ partial "site/related.html" . }}{{ end }}
+  </section>
+{{ end }}

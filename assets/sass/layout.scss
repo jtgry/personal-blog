@@ -19,15 +19,7 @@ article{
   }
 }
 .content{
-  p:first-of-type::first-letter {
-    float: left;
-    font-family: $header-font-family;
-    font-size: 400%;
-    font-weight: 500;
-    line-height: 0.65;
-    margin: 0;
-    padding: 0.05em 0.1em 0 0;
-  }
+
 }
 .post{
   margin-bottom: $spacing-unit;
@@ -119,5 +111,26 @@ article{
     p{
       font-size: .9rem;
     }
+  }
+}
+
+.about{
+  display: flex;
+  align-items: center;
+  max-width: $content-wide;
+  width: 100%;
+  flex-direction: column;
+  @media(min-width: $laptop) {
+    flex-direction: row;
+    margin: 5em auto;
+  }
+    img{
+    min-height: 30em;
+    width: 30em;
+    object-fit: cover;
+    border-radius:50%;
+    @media(min-width: $laptop) {
+    margin-right: 5em;
+    } 
   }
 }
