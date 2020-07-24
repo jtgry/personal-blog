@@ -25,7 +25,7 @@
     <title>
       {{- block "title" . -}}
         {{- if .IsHome -}}
-          {{ .Site.Title }} | Sysadmin by day, Web ninja by night.
+          🤓 + ☕️ {{ .Site.Title }} | SysAdmin by day, Web Developer by night, Amateur Farmer.
         {{- else -}}
         {{- with .Title -}}{{ . }} | {{ end }}{{ .Site.Title }}
         {{ end }}
@@ -36,9 +36,9 @@
     {{ end }}
     {{ block "site/styles" . }}{{ partialCached "site/styles.html" . }}{{ end }}
   </head>
-    <!-- Fathom - beautiful, simple website analytics -->
-    <script src="https://cdn.usefathom.com/script.js" site="TQNLKXEG" defer></script>
-    <!-- / Fathom -->
+  <!-- Fathom - beautiful, simple website analytics -->
+  <script src="https://mantaray.tylergray.dev/script.js" site="TQNLKXEG" defer></script>
+  <!-- / Fathom -->
   <body>
     {{ block "site/nav" . }}{{ partial "site/nav.html" . }}{{ end }}
     <main id="page" class="site-main" role="main">
