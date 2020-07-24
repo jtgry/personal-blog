@@ -1,9 +1,10 @@
 {{ define "main" }}
 {{ block "header" . }}{{ partial "site/header.html" . }}{{ end }}
+{{ with .Site.GetPage "/journaloff" }}
   <article id="content">
     <div class="container">
     
-    {{ with .Site.GetPage "/journal" }}
+    
     {{ with .Pages }}
     <hr class="page-hr"/>
     <h2 class="page-title">Latest Posts</h2>
@@ -18,8 +19,8 @@
       </div>
       {{ end }}
     {{ end }}
-    {{ end }}
-    {{ .Content }}
+      {{ .Content }}
     </div>
   </article>
+  {{ end }}
 {{ end }}

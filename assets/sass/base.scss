@@ -65,7 +65,13 @@ p,li,ol{
 }
 a{
   color: $color-black;
+  font-weight: bold;
   text-decoration: none;
+  border-bottom: 2px solid $color-grey-light;
+  transition: border-color 0.3s ease-out;
+  &:hover{
+    border-bottom: 2px solid $color-grey;
+  }
 }
 ul,ol{
   margin-left: $spacing-unit / 1.2;

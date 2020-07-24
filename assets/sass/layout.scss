@@ -41,6 +41,11 @@ article{
     margin-bottom: $spacing-unit;
   }
 }
+footer{
+  a{
+    border-bottom: hidden;
+  }
+}
 .page-title{
   font-size: .9rem;
   font-family: $alt-font-family;
@@ -116,17 +121,21 @@ article{
 
 .about{
   display: flex;
-  align-items: center;
+
   max-width: $content-wide;
+  justify-content: center;
   width: 100%;
   flex-direction: column;
   @media(min-width: $laptop) {
     flex-direction: row;
     margin: 5em auto;
   }
+  section{
+    flex-basis: 40%;
+  }
     img{
-    min-height: 30em;
-    width: 30em;
+    height: 400px;
+    width: 400px;
     object-fit: cover;
     border-radius:50%;
     @media(min-width: $laptop) {

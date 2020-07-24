@@ -1,4 +1,4 @@
-baseURL = "https://jtg.netlify.app/"
+baseURL = "https://tylergray.dev"
 disableAliases = true
 enableRobotsTXT = false
 languageCode = "en-us"
@@ -23,16 +23,6 @@ identifier = "about"
 name = "About"
 url = "/about/"
 weight = 1
-[[menu.main]]
-identifier = "notes"
-name = "Notes"
-url = "/notes/"
-weight = 2
-[[menu.main]]
-identifier = "projects"
-name = "Projects"
-url = "/projects/"
-weight = 3
 [[menu.main]]
 identifier = "resume"
 name = "Résumé"
