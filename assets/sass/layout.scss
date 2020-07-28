@@ -124,9 +124,11 @@ footer{
 
   max-width: $content-wide;
   justify-content: center;
+  align-items: center;
   width: 100%;
   flex-direction: column;
   @media(min-width: $laptop) {
+    align-items: unset;
     flex-direction: row;
     margin: 5em auto;
   }
