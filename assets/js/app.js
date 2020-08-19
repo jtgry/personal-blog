@@ -42,7 +42,7 @@
 
 
 // Lazy Load Images
-imagesLoaded( document.querySelector('#content'), function( instance ) {
+imagesLoaded( document.querySelector('#page'), function( instance ) {
   console.log('📷 All images are loaded');
 
   var myLazyLoad = new LazyLoad({
