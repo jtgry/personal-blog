@@ -1,11 +1,12 @@
 ---
-title: Long Live The Web
-date: 2020-03-03T14:15:59-06:00
+title: Buy this Laptop instead of a...
+image: "/uploads/chickens-fermented-feed.jpg"
+altText: Photo by Brooke Cagle on Unsplash
+date: 2020-12-12
 draft: false
 tags:
 
 ---
-
 I am the Doctor, and you are the Daleks! Aw, you're all **Mr. Grumpy Face** today. I am the last of my species, and I know how that weighs on the heart so don't lie to me! You know how I sometimes have really brilliant ideas?
 
 {{< gif "https://media.giphy.com/media/Nx0rz3jtxtEre/giphy.gif" "A animated gif of Obi-Wan Kenobi" "Hello There - Obi-Wan Kenobi" >}}

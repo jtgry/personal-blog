@@ -9,14 +9,12 @@
   @media(min-width: $laptop) {
     height: 30vh;
     min-height: 15em;
-    text-align: left;
   }
   h1{
     font-size: 2rem;
     margin-bottom: .2em;
     @media(min-width: $laptop) {
       font-size: 4rem;
-      margin-bottom: 0;
     }
     &.large-title{
       font-size: 3rem;

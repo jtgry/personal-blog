@@ -24,6 +24,11 @@ name = "About"
 url = "/about/"
 weight = 1
 [[menu.main]]
+identifier = "notes"
+name = "Notes"
+url = "/notes/"
+weight = 2
+[[menu.main]]
 identifier = "resume"
 name = "Résumé"
 url = "/resume.pdf/"
