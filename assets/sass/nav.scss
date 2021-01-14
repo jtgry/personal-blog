@@ -1,6 +1,5 @@
 nav{
-  width: 94%;
-  margin: 0 auto;
+  width: 100%;
   margin-top: $spacing-unit / 2;
   padding: .5em 0;
   display: flex;
@@ -16,10 +15,15 @@ nav{
     color: $color-black;
     font-family: $header-font-family;
     font-size: 2rem;
-    margin: .2em 0;
     text-decoration: none;
     border-bottom: none;
     @media(min-width: $laptop) {
+      margin: 0;
+    }
+    img{
+      max-height: 1.6em;
+      width: auto;
+      border-radius: 50%;
       margin: 0;
     }
   }
@@ -36,11 +40,11 @@ nav{
     li{
       display: inline-flex;
       font-family: $alt-font-family;
-      font-size: .9rem;
-      font-weight: 600;
+      font-size: .8rem;
+      
       @media(min-width: $laptop) {
         margin: 0;
-        margin-right: $spacing-unit / 2;
+        margin-right: $spacing-unit;
       }
       a{
         color: $color-grey;
@@ -50,6 +54,7 @@ nav{
         transition-property: color, border-color;
         display: flex;
         align-items: center;
+        font-weight: 600;
         &:hover{
           color: $color-grey-dark;
           border-bottom: 2px solid $color-grey;

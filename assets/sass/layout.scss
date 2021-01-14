@@ -18,6 +18,7 @@ article{
     }
   }
 }
+
 .content{
 
 }
@@ -71,7 +72,10 @@ footer{
   color: $color-grey;
   margin-bottom: .5em;
   @media(min-width: $laptop) {
-    font-size: .8rem;
+    font-size: .8rem!important;
+  }
+  @media(min-width: $desktop) {
+    font-size: .9rem!important;
   }
   
 }
@@ -139,8 +143,7 @@ footer{
     img{
     height: 400px;
     width: 400px;
-    object-fit: cover;
-    border-radius:50%;
+    
     @media(min-width: $laptop) {
     margin-right: 5em;
     } 

@@ -1,7 +1,6 @@
 ---
 title: About
 image: "/uploads/tyler.jpg"
-layout: single-alt
 ---
 Hello there! The name is Tyler, I'm a **sysadmin** and **web developer** with a passion for solving problems and serving others by utilizing technology. I thrive by helping others achieve their goals, and by making their job more streamlined and efficient. 
 
