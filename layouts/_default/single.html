@@ -2,7 +2,6 @@
   <section>
     {{ block "site/page-header" . }}{{ partial "site/page-header.html" . }}{{ end }}
     <article class="content" id="content">
-      <div class="container">
         {{ with .Params.image }}
         {{ $img := (resources.Get . ).Resize "1800x" }}
         {{ $imgthumbnail := $img.Resize "300x q25" | images.Filter (images.GaussianBlur 3) }}
@@ -14,8 +13,6 @@
         </figure>
         {{ end }}
         {{ .Content }}
-      </div>
     </article>
-    {{ block "site/related" . }}{{ partial "site/related.html" . }}{{ end }}
   </section>
 {{ end }}

@@ -1,6 +1,7 @@
 ---
 title: Wishlist
 ---
+
 ### Everyday List
 * [Atlas Backpack](https://atlassupply.co/product/minimalist-acadia/)
 ### Geek List
