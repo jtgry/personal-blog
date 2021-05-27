@@ -2,7 +2,7 @@
 title: Tyler Gray | Alabama SysAdmin and Web Developer
 image: "/images/placeholder.jpg"
 heading: "# Hi, my name is Tyler.\n\n
-## Husband, Father, IT Director, Web Developer, Aspiring Farmer. "
+## Husband, Father, Nerd, Aspiring Farmer. "
 description: "I'm a SysAdmin and Web Developer with a passion for solving problems and serving others by utilizing technology."
 ---
 

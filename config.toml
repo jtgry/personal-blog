@@ -25,15 +25,23 @@ url = "/about/"
 weight = 1
 
 [[menu.main]]
+identifier = "wish"
+name = "Wishlist"
+url = "/wishlist/"
+weight = 2
+
+[[menu.main]]
 identifier = "resume"
 name = "Résumé"
 url = "/resume.pdf/"
 weight = 3
+
 [[menu.main]]
 identifier = "github"
 name = "Github"
 url = "https://github.com/jtgry"
 weight = 4
+
 [[menu.main]]
 identifier = "contact"
 name = "Contact"

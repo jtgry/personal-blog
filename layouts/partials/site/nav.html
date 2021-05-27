@@ -2,11 +2,7 @@
 {{ $currentPage := . }}
 
 <nav>
-  <a class="nav-title" href="/">
-    {{ $img := (resources.Get "/uploads/tyler.png" ).Resize "500x" }}
-    {{ $imgthumbnail := $img.Resize "80x q25" | images.Filter (images.GaussianBlur 3) }}
-    <img class="lazyload" src="{{ $imgthumbnail.RelPermalink }}" data-src="{{ $img.RelPermalink }}" alt="A picture of Tyler" />
-  </a>
+  <a class="nav-title" href="/">Home</a>
         
 
   <ul class="nav-items">
