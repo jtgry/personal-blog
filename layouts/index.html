@@ -1,5 +1,6 @@
 {{ define "main" }}
 {{ block "header" . }}{{ partial "site/header.html" . }}{{ end }}
+{{ .Content }}
 {{ with .Site.GetPage "/journaloff" }}
   <article id="content">
     <div class="container">

@@ -19,9 +19,9 @@ delimiter = ""
 suffixes = [""]
 
 [[menu.main]]
-identifier = "about"
-name = "About"
-url = "/about/"
+identifier = "workingon"
+name = "What I'm Working On"
+url = "/journal/"
 weight = 1
 
 [[menu.main]]
