@@ -13,7 +13,7 @@ nav{
   }
   .nav-title{
     color: $color-grey;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-decoration: none;
     border-bottom: none;
     @media(min-width: $laptop) {
@@ -39,7 +39,7 @@ nav{
     li{
       display: inline-flex;
       font-family: $alt-font-family;
-      font-size: .8rem;
+      font-size: 1rem;
       
       @media(min-width: $laptop) {
         margin: 0;

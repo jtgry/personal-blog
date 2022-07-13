@@ -8,7 +8,7 @@ body{
   font-family: $base-font-family;
   font-weight: $base-font-weight;
   font-size: $base-font-size;
-  letter-spacing: -.01em;
+  letter-spacing: -.05em;
   color: $color-black;
   line-height: $base-line-height;
   background: $color-white;
@@ -41,6 +41,7 @@ h1,h2,h3,h4,h5,h6{
   line-height: 1.2;
   margin-bottom: $spacing-unit / 2;
   font-weight: 400;
+  text-transform: uppercase;
 }
 h1{
   font-size: 4rem;
@@ -61,10 +62,10 @@ h6{
   font-size: 1rem;
 }
 p,li,ol{
-  font-size: .9rem;
+  font-size: 1rem;
   font-family: $alt-font-family;
   @media(min-width: $laptop) {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 a{

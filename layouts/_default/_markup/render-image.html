@@ -4,6 +4,6 @@
 <figure>
   <img class="lazyload" data-object-fit="cover" src="{{ $imageThumbnail.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
   <figcaption>
-    {{ markdownify .Text }}
+    {{ .Text }}
   </figcaption>
 </figure>

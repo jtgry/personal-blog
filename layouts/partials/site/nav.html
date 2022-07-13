@@ -8,7 +8,7 @@
   <ul class="nav-items">
   {{ range .Site.Menus.main.ByWeight }}
     <li>
-      <a href="{{ .URL }}" class="nav-item {{ if eq $currentPage.URL .URL }}active{{ end }}">{{ .Name }}</a>
+      <a href="{{ .URL }}" class="nav-item {{ if eq $currentPage.RelPermalink .URL }}active{{ end }}">{{ .Name }}</a>
     </li>
   {{ end }}
   </ul>

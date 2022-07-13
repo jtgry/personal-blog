@@ -1,8 +1,16 @@
 
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
 
-$base-font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-$alt-font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-$header-font-family: $base-font-family;
+@font-face {
+  font-family: '3270';
+  src: url(/fonts/3270-fonts/3270-Regular.ttf);
+  font-weight: regular;
+}
+
+
+$base-font-family: '3270', monospace;
+$alt-font-family: '3270', monospace;
+$header-font-family: 'VT323', monospace;
 
 $base-font-size:   16px;
 $base-font-weight: 400;

@@ -2,8 +2,7 @@ article{
   figure{
     @media(min-width: $laptop) {
       margin: $spacing-unit * 2 0;
-      min-width: 140%;
-      margin-left: -20%;
+      min-width: 100%;
       max-width: $content-width;
     }
     img{
