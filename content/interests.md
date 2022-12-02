@@ -5,14 +5,15 @@ title: Interests & Hobbies
 ## Things I'm currenty working on or interested in...
 What I like to do when I'm not working or spending time with my family.
 
-### OpenBSD
+## OpenBSD
 
-I'm currently learning and hacking on OpenBSD and have completed the following projects: 
+I'm currently learning and hacking on [OpenBSD](https://www.openbsd.org/) and have completed the following projects: 
 * Email Server 
 * XMPP Server
-* Web Server
+* Web Server 
+* Wireguard VPN Server
 
-### Retro Computing
+## Retro Computing
 
 I love old computers, especially beige one's from the 90's 😎
 
@@ -20,19 +21,28 @@ I love old computers, especially beige one's from the 90's 😎
 
 Current Collection:
 * Socket 7 Pentium 133 MMX
+* socket 370 Pentium III
 * Gateway Penitum III
+* Gateway Penitum I
 * Cyrix MediaGX
 * Apple IIe
 
 
-### Retro Gaming
+## Retro Gaming
 
-Current Collection: 
+Current Collection
+
+#### Consoles
 * NES
 * Sega Genesis
 * Playstation 1
 * Gamecube 
 * Original Xbox
+
+#### Handhelds
+* Gameboy DMG
+* Gameboy Color
+* Gameboy Advance
 
 In Search of:
 * SNES

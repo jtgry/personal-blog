@@ -12,10 +12,11 @@ nav{
     flex-direction: row;
   }
   .nav-title{
-    color: $color-grey;
-    font-size: 1.2rem;
+    color: $color-grey-dark;
+    font-size: .9rem;
     text-decoration: none;
-    border-bottom: none;
+    padding: .2em 1em;
+    border: 2px solid $color-grey;
     @media(min-width: $laptop) {
       margin: 0;
     }
@@ -28,6 +29,7 @@ nav{
   }
   ul{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     align-items: center;
     justify-content: space-around;
@@ -39,16 +41,18 @@ nav{
     li{
       display: inline-flex;
       font-family: $alt-font-family;
-      font-size: 1rem;
+      font-size: .9rem;
       
       @media(min-width: $laptop) {
         margin: 0;
-        margin-right: $spacing-unit;
+        margin-right: $spacing-unit / 2;
       }
       a{
-        color: $color-grey;
-        padding: .2em .1em;
-        border-bottom: 2px solid transparent;
+        color: $color-grey-dark;
+        padding: .2em 1em;
+        background: $color-grey-light;
+        border: 2px solid $color-grey-dark;
+        box-shadow: 3px 3px 1px $color-black;
         transition: all 0.3s ease-out;
         transition-property: color, border-color;
         display: flex;
@@ -56,11 +60,13 @@ nav{
         font-weight: 600;
         &:hover{
           color: $color-grey-dark;
-          border-bottom: 2px solid $color-grey;
+          border: 2px solid $color-grey;
         }
         &.active{
-          color: $color-black;
-          border-bottom: 2px solid $color-grey-dark;
+          background: $color-grey-light;
+          border: 2px solid $color-grey-dark;
+          box-shadow: 3px 3px 1px $color-black;
+
         }
       }
     }

@@ -1,5 +1,6 @@
 <a class="skip-to-content" href="{{ .Permalink }}/#content">Skip navigation</a>
 {{ $currentPage := . }}
+{{ $section := .Site.GetPage $currentPage.Section }}
 
 <nav>
   <a class="nav-title" href="/">tylergray.dev</a>
@@ -8,7 +9,7 @@
   <ul class="nav-items">
   {{ range .Site.Menus.main.ByWeight }}
     <li>
-      <a href="{{ .URL }}" class="nav-item {{ if eq $currentPage.RelPermalink .URL }}active{{ end }}">{{ .Name }}</a>
+      <a href="{{ .URL }}" class="nav-item {{if $section.IsMenuCurrent "main" . }}active{{ end }}">{{ .Name }}</a>
     </li>
   {{ end }}
   </ul>
