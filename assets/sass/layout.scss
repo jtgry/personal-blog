@@ -106,7 +106,8 @@ footer{
     margin: 0 $spacing-unit / 2;
     margin-bottom: $spacing-unit;
     padding: $spacing-unit;
-    border: 1px solid $color-grey-light;
+    border: 2px solid $color-grey-dark;
+    box-shadow: 4px 3px 1px $color-black;
     flex-basis: 100%;
     max-width: $content-width;
     flex-grow: 1;
@@ -117,7 +118,8 @@ footer{
     }
 
     &:hover{
-      border: 1px solid $color-grey;
+      border: 2px solid $color-grey-dark;
+      box-shadow: 6px 5px 1px $color-black;
     }
     p{
       font-size: .9rem;
