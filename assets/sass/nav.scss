@@ -13,10 +13,13 @@ nav{
   }
   .nav-title{
     color: $color-grey-dark;
+    background: $color-grey-light;
     font-size: .9rem;
     text-decoration: none;
     padding: .2em 1em;
-    border: 2px solid $color-grey;
+    border: 2px solid $color-grey-dark;
+    box-shadow: 3px 3px 1px $color-black;
+    margin-bottom: $spacing-unit / 2;
     @media(min-width: $laptop) {
       margin: 0;
     }
@@ -42,7 +45,7 @@ nav{
       display: inline-flex;
       font-family: $alt-font-family;
       font-size: .9rem;
-      
+      margin-bottom: $spacing-unit / 2;
       @media(min-width: $laptop) {
         margin: 0;
         margin-right: $spacing-unit / 2;
