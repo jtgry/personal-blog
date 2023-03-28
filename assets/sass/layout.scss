@@ -1,5 +1,4 @@
 article{
-  
   figure{
     @media(min-width: $laptop) {
       margin: $spacing-unit * 2 0;
@@ -19,9 +18,6 @@ article{
   }
 }
 
-.content{
-
-}
 .post{
   margin-bottom: $spacing-unit;
   h3{
@@ -45,6 +41,9 @@ article{
 }
 footer{
   position: relative;
+  width: 100%;
+  max-width: $content-width;
+  margin: 0 auto;
   a{
     border-bottom: hidden;
   }
@@ -69,7 +68,6 @@ footer{
 .meta{
   font-size: .7rem!important;
   font-weight: 700;
-  font-family: $alt-font-family;
   color: $color-grey;
   margin-bottom: .5em;
   @media(min-width: $laptop) {
@@ -83,14 +81,16 @@ footer{
 .tag{
   font-size: .8rem;
   font-weight: 700;
-  font-family: $alt-font-family;
-  color: $color-grey;
-  background: $color-grey-light;
+  color: $color-white;
+  background: $color-grey-dark;
+  border: unset;
   margin-bottom: $spacing-unit / 2;
   margin-right: .5em;
   padding: .2em .5em;
   text-decoration: none;
-  border-radius: 2px;
+  &:hover{
+    border: unset;
+  }
 }
 .grid{
   width: 100%;
@@ -102,16 +102,12 @@ footer{
   max-width: $content-wide;
   margin: 0 auto;
   .grid-item{
-    background: $color-grey-light;
     flex-basis: 100%;
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit * 2;
     padding: $spacing-unit;
     border: 2px solid $color-grey-dark;
-    box-shadow: 4px 3px 1px $color-black;
     flex-basis: 100%;
-    
-    max-width: $content-width;
-    transition: border-color .3s ease-out;
+    transition: box-shadow .3s ease-out;
     @media(min-width: $laptop) {
       flex-basis: 47%;
       margin-bottom: $spacing-unit / 2;
@@ -119,7 +115,12 @@ footer{
 
     &:hover{
       border: 2px solid $color-grey-dark;
-      box-shadow: 6px 5px 1px $color-black;
+      box-shadow: 6px 5px $color-black;
+    }
+    h3{
+      a{
+        font-family: $header-font-family;
+      }
     }
     p{
       font-size: .9rem;

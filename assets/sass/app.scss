@@ -1,16 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
-
-@font-face {
-  font-family: '3270';
-  src: url(/fonts/3270-fonts/3270-Regular.ttf);
-  font-weight: regular;
-}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&family=VT323&display=swap');
 
 
-$base-font-family: '3270', monospace;
-$alt-font-family: '3270', monospace;
-$header-font-family: 'VT323', monospace;
+$alt-font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+$base-font-family: 'IBM Plex Mono', -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+$header-font-family: 'VT323', serif;
 
 $base-font-size:   16px;
 $base-font-weight: 400;
@@ -21,7 +15,7 @@ $spacing-unit:     2rem;
 
 
 $content-width:    1000px;
-$content-wide:     1200px;
+$content-wide:     1400px;
 $phone:            400px;
 $tablet:           700px;
 $laptop:           1000px;
@@ -36,7 +30,7 @@ $color-brand:      #424242;
 $color-brand-alt:  #008080;
 
 $color-white:      #f3f7f7;
-$color-black:      #424242;
+$color-black:      #555555;
 $color-background: #222222;
 $color-transparent:rgba(0,0,0,0);
 $color-grey:       rgba(120,120,120,1);

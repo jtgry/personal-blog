@@ -13,13 +13,12 @@ nav{
   }
   .nav-title{
     color: $color-grey-dark;
-    background: $color-grey-light;
-    font-size: .9rem;
+    font-family: $header-font-family;
+    font-size: 1.6rem;
     text-decoration: none;
     padding: .2em 1em;
-    border: 2px solid $color-grey-dark;
-    box-shadow: 3px 3px 1px $color-black;
     margin-bottom: $spacing-unit / 2;
+    border: unset;
     @media(min-width: $laptop) {
       margin: 0;
     }
@@ -44,26 +43,25 @@ nav{
     li{
       display: inline-flex;
       font-family: $alt-font-family;
-      font-size: .9rem;
-      margin-bottom: $spacing-unit / 2;
+      font-size: 1rem;
+      
       @media(min-width: $laptop) {
         margin: 0;
         margin-right: $spacing-unit / 2;
       }
       a{
         color: $color-grey-dark;
+        border: unset;
+        border-bottom: 2px solid $color-transparent;
         padding: .2em 1em;
-        background: $color-grey-light;
-        border: 2px solid $color-grey-dark;
-        box-shadow: 3px 3px 1px $color-black;
         transition: all 0.3s ease-out;
         transition-property: color, border-color;
         display: flex;
         align-items: center;
-        font-weight: 600;
+        font-weight: 500;
         &:hover{
           color: $color-grey-dark;
-          border: 2px solid $color-grey;
+          border-bottom: 2px solid $color-grey;
         }
         &.active{
           background: $color-grey-light;
