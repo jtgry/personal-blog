@@ -8,7 +8,7 @@
         {{ end }}
       {{ range .Paginator.Pages }}
       <div class="post">
-        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
         {{ if gt .Date "" }}<p class="meta">{{ with .Date }}{{ .Format "Monday, January 2, 2006" }}{{ end }} · {{ .ReadingTime }} Min Read</p>{{ end }}
         {{ with .Params.tags }}{{ range . }}<a class="tag" href="{{ $.Site.BaseURL }}tags/{{ . | urlize | lower }}">{{ . }}</a>{{ end }}{{ end }}
         <p>{{ .Summary }}</p>

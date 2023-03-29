@@ -20,10 +20,16 @@ article{
 
 .post{
   margin-bottom: $spacing-unit;
+  p{
+    font-size: .9rem;
+    font-weight: 500;
+  }
   h3{
     font-size: 2rem;
     margin-bottom: 0;
     a{
+      font-family: $header-font-family;
+      font-weight: 400;
       margin-bottom: 0;
       text-decoration: none;
       display: block;
@@ -41,7 +47,7 @@ article{
 }
 footer{
   position: relative;
-  width: 100%;
+  width: 94%;
   max-width: $content-width;
   margin: 0 auto;
   a{
@@ -117,14 +123,7 @@ footer{
       border: 2px solid $color-grey-dark;
       box-shadow: 6px 5px $color-black;
     }
-    h3{
-      a{
-        font-family: $header-font-family;
-      }
-    }
-    p{
-      font-size: .9rem;
-    }
+
   }
 }
 
