@@ -1,9 +1,9 @@
 [build]
-    command = "./task build"
+    command = "npm build"
     publish = "public"
 
 [build.environment]
-    HUGO_VERSION = "0.80.0"
+    HUGO_VERSION = "0.121.0"
 
 [context.production.environment]
     HUGO_ENV = "production"
