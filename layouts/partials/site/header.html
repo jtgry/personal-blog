@@ -3,7 +3,7 @@
   {{ $imgthumbnail := $img.Resize "500x q25" | images.Filter (images.GaussianBlur 3) }}
 
   <div class="hero min-h-screen">
-    <div class="hero-content flex-col lg:flex-row gap-x-8">
+    <div class="hero-content flex-col lg:flex-row gap-x-8 px-0">
       <img src="{{ $imgthumbnail.RelPermalink }}" data-src="{{ $img.RelPermalink }}" class="lazyload max-w-md rounded-lg shadow-2xl hidden sm:block" />
       <div>
         {{ with .Params.heading }}

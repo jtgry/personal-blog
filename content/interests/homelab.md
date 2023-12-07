@@ -2,6 +2,7 @@
 title: Homelab
 date: 2022-06-27
 draft: false
+summary: "Currently learning and hacking on OpenBSD and Debian."
 ---
 ## OpenBSD
 

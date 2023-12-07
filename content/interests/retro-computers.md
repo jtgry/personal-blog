@@ -1,6 +1,7 @@
 ---
 title: Retro Computers
 date: 2022-03-03
+summary: "I love old computers, especially beige one's from the 90's 😎"
 ---
 I love old computers, especially beige one's from the 90's 😎
 
