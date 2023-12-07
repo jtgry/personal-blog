@@ -5,7 +5,6 @@ heading: "Hi, my name is Tyler."
 subheading: "Husband, Father, Nerd, Aspiring Farmer."
 description: "I'm a SysAdmin and Web Developer with a passion for solving problems and serving others by utilizing technology."
 ---
-
 Hello there! The name is Tyler, I'm a **sysadmin** and **web developer** with a passion for solving problems and serving others by utilizing technology. I thrive by helping others achieve their goals, and by making their job more streamlined and efficient.
 
 I am a well-rounded and versatile **technology expert**, that has had the privilege of working and gaining valuable real world experience in the IT field. From server administration, managing data centers, leading team members, writing software, developing websites, and everything in-between. 
