@@ -1,26 +1,7 @@
 <!doctype html>
-<html lang="{{ .Site.LanguageCode | default "en-us" }}" id="root">
-<script type="text/javascript">
-;(function (window, document, undefined) {
-  'use strict';
-  if (!('localStorage' in window)) return;
-  var darkMode = localStorage.getItem('darkMode');
-  if (darkMode == 'true'){
-    document.documentElement.className = 'theme-dark';
-  }
-  else if (darkMode == 'false'){
-    document.documentElement.className = '';
-  }
-  else{
-    if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
-      console.log('🎉 Dark mode is supported');
-      localStorage.setItem('darkMode', true);
-      document.documentElement.className = 'theme-dark';
-    }
-  }
-})(window, document);
-</script>
-  <head >
+<html lang="{{ .Site.LanguageCode | default "en-us" }}" id="root" data-theme="synthwave">
+
+  <head>
     {{ block "site/meta" . }}{{ partial "site/meta.html" . }}{{ end }}
     <title>
       {{- block "title" . -}}
@@ -41,7 +22,7 @@
   <!-- / Fathom -->
   <body>
     {{ block "site/nav" . }}{{ partial "site/nav.html" . }}{{ end }}
-    <main id="page" class="site-main" role="main">
+    <main id="page" class="container mx-auto px-4 min-h-screen" role="main">
       {{ block "main" . }}{{ end }}
     </main>
     {{ block "site/footer" . }}{{ partialCached "site/footer.html" . }}{{ end }}

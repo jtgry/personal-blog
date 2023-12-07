@@ -1,10 +1,12 @@
-.theme-dark{
-    background: $color-background!important;
+.theme-retro{
+  background-color: #cccccc;
+  color: #222;
   body{
-    background: $color-background!important;
+    background-color: #cccccc;
+    color: #222;
   }
   p,ol,li,a,h1,h2,h3,h4,h5,h6,td,th,label{
-    color: $color-white!important;
+    color: #222;
   }
   hr{
     background: $color-grey-dark!important;
@@ -36,11 +38,10 @@
     color: $color-white;
   }
   .icon-link{
-    background: $color-background;
+    background: $color-grey-light;
   }
   .feather {
-    stroke: $color-grey-light;
-    color: $color-white;
+    stroke: #111;
   }
   .button{
     background: $color-grey;
@@ -53,6 +54,7 @@
     }
   }
   .nav-item{
+    font-size: 1.2rem;
     background: none!important;
   }
           

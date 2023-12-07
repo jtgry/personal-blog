@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "concurrently": "^8.2.2",
+    "daisyui": "^4.4.19",
+    "postcss": "^8.4.32",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.3.6"
+  },
+  "scripts": {
+    "start": "concurrently npm:watch:*",
+    "watch:tw": "tailwindcss -i ./assets/css/app.css -o ./assets/css/style.css --watch",
+    "watch:hugo": "hugo server",
+    "build": "hugo --minify",
+    "test": "hugo"
+  }
+}

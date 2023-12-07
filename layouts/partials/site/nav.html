@@ -1,14 +1,18 @@
-<a class="skip-to-content" href="{{ .Permalink }}/#content">Skip navigation</a>
 {{ $currentPage := . }}
 {{ $section := .Site.GetPage $currentPage.Section }}
+<nav class="navbar container mx-auto">
+  <div class="flex-1">
+    <a class="text-lg uppercase" href="/">tylergray.dev</a>
+  </div>
+  <div class="flex-none">
+    <ul class="menu menu-horizontal px-1">
+    {{ range .Site.Menus.main.ByWeight }}
+      <li>
+        <a href="{{ .URL }}" class="{{if $section.IsMenuCurrent "main" . }}active{{ end }}">{{ .Name }}</a>
+      </li>
+    {{ end }}
 
-<nav>
-  <a class="nav-title" href="/">tylergray.dev</a>
-  <ul class="nav-items">
-  {{ range .Site.Menus.main.ByWeight }}
-    <li>
-      <a href="{{ .URL }}" class="nav-item {{if $section.IsMenuCurrent "main" . }}active{{ end }}">{{ .Name }}</a>
-    </li>
-  {{ end }}
-  </ul>
+    </ul>
+    
+  </div>
 </nav>

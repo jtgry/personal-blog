@@ -17,7 +17,9 @@ nav{
     font-family: $header-font-family;
     font-weight: 400;
     font-size: 1.6rem;
+    letter-spacing: .1em;
     text-decoration: none;
+    text-transform: uppercase;
     padding: .2em 1em;
     border: unset;
       
@@ -77,5 +79,34 @@ nav{
         }
       }
     }
+  }
+}
+.icon-link{
+  position: fixed;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  bottom: 0;
+  right: 0; 
+  padding: .3em;
+  background: $color-grey-light;
+  line-height: 0;
+  border-radius: 3em;
+  border-bottom: none;
+  z-index: 2000;
+  .feather {
+    width: 24px;
+    height: 24px;
+  }
+  @media(min-width: $laptop) {
+    margin: 0;
+    margin-left: -3em;
+    position: relative;
+    .feather {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  &:hover{
+  border-bottom: none;
   }
 }

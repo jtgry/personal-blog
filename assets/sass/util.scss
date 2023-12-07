@@ -27,20 +27,6 @@
   visibility: hidden;
   display: none;
 }
-.icon-link{
-  padding: .3em;
-  background: $color-grey-light;
-  line-height: 0;
-  border-radius: 3em;
-  border-bottom: none;
-  z-index: 2000;
-  @media(min-width: $laptop) {
-    margin-left: -5em;
-  }
-  &:hover{
-  border-bottom: none;
-  }
-}
 
 .feather {
   width: 18px;

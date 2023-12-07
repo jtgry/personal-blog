@@ -4,7 +4,7 @@
 
 $alt-font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 $base-font-family: 'IBM Plex Mono', -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-$header-font-family: 'VT323', serif;
+$header-font-family: 'VT323', sans-serif;
 
 $base-font-size:   16px;
 $base-font-weight: 400;
@@ -30,7 +30,7 @@ $color-brand:      #424242;
 $color-brand-alt:  #008080;
 
 $color-white:      #f3f7f7;
-$color-black:      #555555;
+$color-black:      #333333;
 $color-background: #222222;
 $color-transparent:rgba(0,0,0,0);
 $color-grey:       rgba(120,120,120,1);
@@ -51,5 +51,6 @@ $height-top:        2000;
   "forms",
   "button",
   "dark",
+  "retro",
   "util"
 ;

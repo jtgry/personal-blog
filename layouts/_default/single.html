@@ -1,7 +1,7 @@
 {{ define "main" }}
   <section>
     {{ block "site/page-header" . }}{{ partial "site/page-header.html" . }}{{ end }}
-    <article class="content" id="content">
+    <article class="content prose lg:prose-xl" id="content">
         {{ with .Params.image }}
         {{ $img := (resources.Get . ).Resize "1800x" }}
         {{ $imgthumbnail := $img.Resize "300x q25" | images.Filter (images.GaussianBlur 3) }}
