@@ -1,20 +1,27 @@
-<header class="mt-10">
+<header class="sm:mt-10">
   {{ $img := (resources.Get (.Params.image)).Resize "2500x"}}
-  {{ $imgthumbnail := $img.Resize "500x q25" | images.Filter (images.GaussianBlur 3) }}
+  {{ $imgThumbnail := $img.Resize "500x q25" | images.Filter (images.GaussianBlur 3) }}
+  {{ $imgSmall := (resources.Get (.Params.image)).Fill "300x300"}}
+  {{ $imgSmallThumbnail := $imgSmall.Resize "100x100 q25" | images.Filter (images.GaussianBlur 3) }}
 
   <div class="hero min-h-screen">
-    <div class="hero-content flex-col lg:flex-row gap-x-8 px-0">
-      <img src="{{ $imgthumbnail.RelPermalink }}" data-src="{{ $img.RelPermalink }}" class="lazyload max-w-md rounded-lg shadow-2xl hidden sm:block" />
-      <div>
-        {{ with .Params.heading }}
-        <h1 class="text-2xl md:text-5xl font-bold mb-2">{{ . }}</h1>
-        {{ end }}
-        {{ with .Params.subheading }}
-        <h2 class="text-md md:text-2xl font-bold">{{ . }}</h1>
-        {{ end }}
+    <div class="hero-content flex-col lg:flex-row gap-x-32 px-0">
+      <img src="{{ $imgThumbnail.RelPermalink }}" data-src="{{ $img.RelPermalink }}" class="lazyload max-w-md rounded-lg shadow-2xl hidden lg:block" />
+        <div>
+          <div class="flex flex-row gap-x-8 ">
+            <img src="{{ $imgSmallThumbnail.RelPermalink }}" data-src="{{ $imgSmall.RelPermalink }}" class="lazyload rounded-lg w-24 h-24 shadow-2xl lg:hidden" />
+            <div>
+              {{ with .Params.heading }}
+              <h1 class="text-1xl sm:text-2xl md:text-3xl lg:text-5xl font-bold mb-2">{{ . }}</h1>
+              {{ end }}
+              {{ with .Params.subheading }}
+              <h2 class="text-sm sm:text-md md:text-1xl lg:text-2xl font-bold text-base-content/70">{{ . }}</h1>
+              {{ end }}
+            </div>
+          </div>
         <div class="py-6 prose lg:prose-md">{{ .Content }}</div>
-
       </div>
+
     </div>
   </div>
 </header>
