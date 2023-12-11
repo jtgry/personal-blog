@@ -4,13 +4,13 @@
     <article id="content">
       <div class="flex gap-x-8 flex-col lg:flex-row">
       {{ range .Paginator.Pages }}
-      <div class="lg:flex-1 card w-full lg:w-96 bg-base-100 shadow-xl">
+      <div class="lg:flex-1 card-compact w-full lg:w-96 bg-base-100 shadow-xl">
         <div class="card-body">
           <h2 class="card-title">{{ .Title }}</h2>
           <p>{{ .Summary }}</p>
           {{ if gt .Date "" }}<p class="meta">{{ with .Date }}{{ .Format "Monday, January 2, 2006" }}{{ end }} · {{ .ReadingTime }} Min Read</p>{{ end }}
         {{ with .Params.tags }}{{ range . }}<a class="tag" href="{{ $.Site.BaseURL }}tags/{{ . | urlize | lower }}">{{ . }}</a>{{ end }}{{ end }}
-          <div class="card-actions justify-end">
+          <div class="card-actions justify-end mt-8">
             <a href="{{ .Permalink }}" class="btn btn-primary">Learn More</a>
           </div>
         </div>

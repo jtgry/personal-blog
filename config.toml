@@ -34,19 +34,19 @@ weight = 2
 identifier = "wish"
 name = "Wishlist"
 url = "https://giftful.com/tylergray"
-weight = 3
+weight = 5
 
 [[menu.main]]
 identifier = "resume"
 name = "Résumé"
-url = "/resume.pdf/"
-weight = 4
+url = "/resume"
+weight = 3
 
 [[menu.main]]
 identifier = "github"
 name = "Github"
 url = "https://github.com/jtgry"
-weight = 5
+weight = 4
 
 [[menu.main]]
 identifier = "contact"

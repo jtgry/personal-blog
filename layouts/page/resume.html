@@ -1,0 +1,28 @@
+{{ define "main" }}
+  <section class="container mx-auto">
+    {{ block "site/page-header" . }}{{ partial "site/page-header.html" . }}{{ end }}
+    <div class="lg:flex justify-between">
+      <div class="flex-auto max-w-md">
+        <div class="prose mb-16">
+          {{ .Content }}
+        </div>
+      </div>
+      <div class="flex-1">
+        {{ range sort .Paginator.Pages "Params.order" "asc" }}
+        <div class="w-full mb-16 sm:pl-16">
+          <div class="">
+            <h2 class="text-4xl mb-2">{{ .Title }}</h2>
+            <h3 class="text-xl mb-2 text-base-content/80">{{ .Params.company }}</h3>
+            <p class="text-sm mb-4 text-base-content/50">{{ .Params.start_date }} - {{ .Params.end_date }}</p>
+            <div class="prose px-4 ">
+              {{ .Content }}
+            </div>
+            {{ if gt .Date "" }}<p class="meta">{{ with .Date }}{{ .Format "Monday, January 2, 2006" }}{{ end }} · {{ .ReadingTime }} Min Read</p>{{ end }}
+          {{ with .Params.tags }}{{ range . }}<a class="tag" href="{{ $.Site.BaseURL }}tags/{{ . | urlize | lower }}">{{ . }}</a>{{ end }}{{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}
