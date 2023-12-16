@@ -8,7 +8,7 @@ tags:
 ---
 
 
-## Accidently made a commit to master/main branch
+## Accidently made a commit to master/main branch, here's how to fix it!
 
 
     git branch backup

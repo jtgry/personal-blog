@@ -1,4 +1,4 @@
 ---
 title: Interests
-layout: list-alt
+layout: list
 ---

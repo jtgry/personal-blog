@@ -6,7 +6,7 @@
         {{ $img := (resources.Get . ).Resize "1800x" }}
         {{ $imgthumbnail := $img.Resize "300x q25" | images.Filter (images.GaussianBlur 3) }}
         <figure>
-          <img class="lazyload" src="{{ $imgthumbnail.RelPermalink }}" data-src="{{ $img.RelPermalink }}" alt="{{ $.Params.altText }}" />
+          <img class="lazyload min-w-full" src="{{ $imgthumbnail.RelPermalink }}" data-src="{{ $img.RelPermalink }}" alt="{{ $.Params.altText }}" />
           <figcaption>
             {{ $.Params.altText }}
           </figcaption>

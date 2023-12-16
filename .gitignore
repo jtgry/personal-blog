@@ -5,3 +5,4 @@
 /resources/_gen/assets
 
 .env
+.DS_Store
