@@ -1,6 +1,7 @@
 ---
 title: OpenBSD vs Linux
 date: 2023-11-23
+draft: true
 ---
 
 When comparing OpenBSD and Linux for server use, it's important to understand that each has its own strengths and weaknesses, making them suitable for different server environments and requirements.
