@@ -1,5 +1,5 @@
 ---
-title: Director of Infortmation Systems
+title: Director of Information Systems
 company: Central Alabama Community College
 start_date: 2020
 end_date: 2022
