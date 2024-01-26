@@ -1,19 +1,30 @@
 ---
-title: Solutions Architect
+title: Senior Solutions Architect
 company: Tovuti LMS
 start_date: 2022
 end_date: current
 order: 1
 ---
-As a Solutions Architect, I have designed and implemented complex solutions for large enterprises and organizations. I work closely with key stakeholders to understand their business requirements to deliver high-quality software applications and solutions that meet their needs. I provide technical leadership to junior team members, encouraging their professional growth and development, and regularly assess existing solutions to provide recommendations for improvements and optimization.
+As a Senior Solutions Architect, I specialize in designing and implementing technical solutions that effectively address and resolve specific business needs. My expertise includes crafting intricate custom API integrations, ensuring seamless connectivity, and leveraging Single Sign-On (SSO) for secure and user-friendly authentication processes. Collaborating closely with developers and engineers, I ensure high-quality software delivery aligned with client specifications and strategic business objectives. Additionally, I provide strategic technical leadership and direction, guiding teams to optimal solutions and fostering innovation in alignment with organizational goals.
 
-* Work with clients to understand their business requirements and develop technical solutions to meet their needs.
-Work closely with a team of developers and engineers to deliver high-quality software applications that meet client specifications.
+* Engage clients to understand business requirements, delivering tailored technical solutions.
 
-* Conduct technical feasibility studies and provide recommendations on the best technologies and tools to use for specific projects.
+* Design and implement custom API integrations, ensuring seamless connectivity and fulfilling specific business needs.
 
-* Collaborate with cross-functional teams, including sales, marketing, and product development, to ensure that solutions meet business objectives and align with company strategy.
+* Leverage Single Sign-On (SSO) expertise for secure and user-friendly authentication processes.
 
-* Act as a technical advisor and subject matter expert, providing guidance on emerging technologies and industry best practices.
-Conduct regular assessments of existing solutions and provide recommendations for improvements and optimization.
-Develop and maintain relationships with key stakeholders, including clients, vendors, and partners, to ensure successful project delivery and customer satisfaction.
+* Effectively manage Git repositories, ensuring version control and collaboration among development teams.
+
+* Implement robust CI/CD pipelines, automating software testing, integration, and deployment for efficiency.
+
+* Collaborate with developers and engineers to ensure high-quality software aligned with client specifications.
+
+* Conduct technical feasibility studies, recommending optimal technologies and tools for projects.
+
+* Collaborate cross-functionally to align solutions with business objectives and company strategy.
+
+* Serve as a technical advisor, offering guidance on emerging technologies and best practices.
+
+* Regularly assess existing solutions, providing recommendations for improvement.
+
+* Foster relationships with key stakeholders, ensuring successful project delivery and customer satisfaction.
