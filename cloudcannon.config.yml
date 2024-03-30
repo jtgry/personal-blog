@@ -1,0 +1,47 @@
+paths:
+  data: data
+  collections: content
+  includes: layouts
+  layouts: layouts
+  static: static
+  uploads: assets/uploads
+  source: ''
+  archetypes: archetypes
+  assets: assets
+  content: content
+  pages: content
+  publish: public
+  config: ''
+collections_config:
+  pages:
+    path: content
+    output: true
+    filter: strict
+    parse_branch_index: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  interests:
+    path: content/interests
+    output: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  notes:
+    path: content/notes
+    output: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  resume:
+    path: content/resume
+    output: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+data_config: {}
+timezone: Etc/UTC
