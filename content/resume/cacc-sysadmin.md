@@ -26,4 +26,4 @@ Provided valuable insights and guidance on technology-related issues as a member
 
 * Implemented a VPN solution to facilitate remote work, enabling our employees and students to stay connected and productive from anywhere.
 
-* Spearheaded a successful campus-wide network upgrade to ensure our systems ran smoothly
+* Spearheaded a successful campus-wide network upgrade to ensure our systems ran smoothly.

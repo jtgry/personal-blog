@@ -6,7 +6,7 @@
     <title>
       {{- block "title" . -}}
         {{- if .IsHome -}}
-          {{ .Site.Title }} | Nerd Alert!
+          {{ .Site.Title }} | Technology Leader & Expert
         {{- else -}}
         {{- with .Title -}}{{ . }} | {{ end }}{{ .Site.Title }}
         {{ end }}
@@ -18,7 +18,7 @@
     {{ block "site/styles" . }}{{ partialCached "site/styles.html" . }}{{ end }}
   </head>
   <!-- Fathom - beautiful, simple website analytics -->
-  <script src="https://mantaray.tylergray.dev/script.js" site="TQNLKXEG" defer></script>
+  <script src="https://cdn.usefathom.com/script.js" data-site="TQNLKXEG" defer></script>
   <!-- / Fathom -->
   <body>
     {{ block "site/nav" . }}{{ partial "site/nav.html" . }}{{ end }}
