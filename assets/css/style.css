@@ -2727,11 +2727,6 @@ h1,
   min-width: 100%;
 }
 
-.min-w-max{
-  min-width: -moz-max-content;
-  min-width: max-content;
-}
-
 .max-w-md{
   max-width: 28rem;
 }
